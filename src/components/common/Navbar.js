@@ -4,7 +4,9 @@ import "./nav.scss";
 
 function Navbar() {
   return (
-    <Header style={{ backgroundColor: "#1F1E1D", position: "fixed" }}>
+    <Header
+      style={{ backgroundColor: "#1F1E1D", position: "fixed", width: "100%" }}
+    >
       <Menu
         mode="horizontal"
         style={{
@@ -13,10 +15,11 @@ function Navbar() {
           display: "flex",
           justifyContent: "flex-end",
         }}
+        selectedKeys={["skill"]}
       >
-        <Menu.Item key="1">Skills .</Menu.Item>
-        <Menu.Item key="2">Contact .</Menu.Item>
-        <Menu.Item key="3">Projects .</Menu.Item>
+        <Menu.Item key="skill">Skills .</Menu.Item>
+        <Menu.Item key="contact">Contact .</Menu.Item>
+        <Menu.Item key="project">Projects .</Menu.Item>
       </Menu>
     </Header>
   );

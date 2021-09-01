@@ -2,13 +2,13 @@
   border: none !important;
 }
 
-.ant-menu-title-content {
+.ant-menu-item {
   color: whitesmoke;
   &:hover {
-    color: #f84525;
+    color: #c57163 !important;
   }
 }
 
-.ant-menu-item:active {
-  color: #f84525;
+.ant-menu-item-selected {
+  color: #f84525 !important;
 }
