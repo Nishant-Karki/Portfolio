@@ -1,0 +1,17 @@
+.btnbg {
+  cursor: pointer;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #323135;
+  height: 3rem;
+  border-radius: 1.5rem;
+  transition: ease-in-out 0.5s;
+  white-space: nowrap;
+  padding: 1rem;
+
+  &:hover {
+    background-color: #323135;
+    width: inherit;
+  }
+}
