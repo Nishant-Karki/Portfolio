@@ -26,7 +26,7 @@ function Home() {
     >
       <div style={{ margin: "16%" }}>
         <Row>
-          <Col md={12} sm={24}>
+          <Col md={12} sm={12} xs={24}>
             <Fade left duration={600}>
               <Title level={4} style={{ color: "#EA4123", lineHeight: 0.1 }}>
                 <Typewriter
@@ -73,7 +73,7 @@ function Home() {
               </a>
             </Fade>
           </Col>
-          <Col offset={4}>
+          <Col offset={4} md={6} sm={6} xs={24}>
             <Fade right duration={600}>
               <ImageContainer
                 alt="portrait"

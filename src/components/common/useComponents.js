@@ -1,7 +1,7 @@
 import { Typography, Timeline } from "antd";
 
-import "./button.scss";
-import "./imageContainer.scss";
+import "../sass/button.scss";
+import "../sass/imageContainer.scss";
 
 function useComponents() {
   const { Title } = Typography;

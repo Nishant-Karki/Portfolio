@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Menu } from "antd";
 import Layout, { Footer, Header, Content } from "antd/lib/layout/layout";
-import "./nav.scss";
+import "../sass/nav.scss";
 import useWindowsScrollPosition from "@rehooks/window-scroll-position";
 
 function Navbar() {
   const [change, setChange] = useState(false);
-  const changePosition = 730;
+  const changePosition = 755;
 
   let position = useWindowsScrollPosition();
 
@@ -19,7 +19,6 @@ function Navbar() {
 
   const headerStyle = {
     // backgroundColor: change ? "whitesmoke" : "#1F1E1D",
-    zIndex: 999,
     backgroundColor: "transparent",
     position: "fixed",
     width: "100%",
@@ -42,7 +41,9 @@ function Navbar() {
       <Menu mode="horizontal" style={appStyle}>
         {/* <Menu.Item key="skill">Skills .</Menu.Item>
         <Menu.Item key="contact">Contact .</Menu.Item> */}
-        <Menu.Item key="contact">Lets Talk .</Menu.Item>
+        <Menu.Item key="contact" style={{ fontSize: "16px" }}>
+          Lets Talk .
+        </Menu.Item>
       </Menu>
     </Header>
   );
