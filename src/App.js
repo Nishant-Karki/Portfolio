@@ -4,6 +4,7 @@ import Home from "./components/pages/Home/index";
 import { useEffect } from "react";
 import user from "./api/user.json";
 import "./App.scss";
+import Education from "./components/pages/Education";
 
 function App() {
   useEffect(() => {
@@ -13,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <div style={{ height: "300vh" }}>sdasd</div>
+      <Education />
     </>
   );
 }

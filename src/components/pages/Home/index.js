@@ -16,7 +16,7 @@ function Home() {
   const aboutMe = user.aboutMe1.replace(regex, "");
 
   return (
-    <Layout
+    <div
       style={{
         backgroundColor: "#1F1E1D",
         display: "flex",
@@ -85,7 +85,7 @@ function Home() {
           </Col>
         </Row>
       </div>
-    </Layout>
+    </div>
   );
 }
 

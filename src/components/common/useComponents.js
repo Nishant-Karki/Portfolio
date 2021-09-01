@@ -1,4 +1,4 @@
-import { Typography } from "antd";
+import { Typography, Timeline } from "antd";
 
 import "./button.scss";
 import "./imageContainer.scss";
