@@ -17,4 +17,10 @@
 .social-icon {
   cursor: pointer;
   font-size: 25px;
+  margin: 1rem;
+  color: grey;
+
+  &:hover {
+    color: whitesmoke;
+  }
 }
