@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", "Monotype Corsiva";
+  scroll-behavior: smooth;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 8px solid #f84525;
+    border-radius: 4px;
+  }
+}

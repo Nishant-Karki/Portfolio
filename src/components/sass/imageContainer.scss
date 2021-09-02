@@ -1,0 +1,11 @@
+.portraitContainer {
+  cursor: pointer;
+  border-radius: 2rem;
+  border-right: 4px solid #323135;
+  border-bottom: 4px solid #323135;
+  transition: 0.4s ease-out;
+
+  &:hover {
+    border-color: #f84525;
+  }
+}
