@@ -9,49 +9,47 @@ function Skill() {
   return (
     <div
       style={{
-        height: "70vh",
-        backgroundColor: "#1F1E1D",
+        minHeight: "80vh",
+        backgroundColor: "#e9e9e9",
       }}
     >
-      <Fade left cascade>
-        <Content style={{ padding: "10% 15%" }}>
-          <Title level={1} style={{ color: "whitesmoke" }}>
-            Skills
-          </Title>
-          <div>
-            <Row>
-              {
-                user.skills.map((item, index) => (
-                  <Col xs={6}>
-                    <div key={index}>
-                      <div
-                        style={{
-                          maxHeight: "6rem",
-                          backgroundColor: "#272624",
-                          maxWidth: "14rem",
-                          borderRadius: "1rem",
-                          padding: "1rem",
-                          margin: "1rem",
-                          textAlign: "center",
-                        }}
-                      >
-                        <Rate
-                          style={{ color: " #f84525", border: "red" }}
-                          allowHalf
-                          disabled
-                          defaultValue={(item.percentage / 20).toFixed(1)}
-                        />
-                        <h4 style={{ color: "whitesmoke" }}>{item.name}</h4>
-                      </div>
+      <Content style={{ padding: "10% 15%" }}>
+        <Title level={1}>Skills</Title>
+        <div>
+          <Row>
+            {
+              user.skills.map((item, index) => (
+                <Col key={index} lg={6} md={4} sm={12} xs={24}>
+                  <Fade bottom cascade>
+                    <div
+                      style={{
+                        cursor: "pointer",
+                        minHeight: "6rem",
+                        backgroundColor: "#272624",
+                        maxWidth: "14rem",
+                        borderRadius: "1rem",
+                        padding: "1rem",
+                        margin: "1rem",
+                        textAlign: "center",
+                        boxShadow: "6px 8px 5px #A6A6A6",
+                      }}
+                    >
+                      <Rate
+                        style={{ color: " #f84525", border: "red" }}
+                        allowHalf
+                        disabled
+                        defaultValue={(item.percentage / 20).toFixed(1)}
+                      />
+                      <h4 style={{ color: "whitesmoke" }}>{item.name}</h4>
                     </div>
-                  </Col>
-                ))
-                // .slice(0, 1)
-              }
-            </Row>
-          </div>
-        </Content>
-      </Fade>
+                  </Fade>
+                </Col>
+              ))
+              // .slice(0, 1)
+            }
+          </Row>
+        </div>
+      </Content>
     </div>
   );
 }

@@ -15,9 +15,7 @@ function useComponents() {
   };
 
   const ImageContainer = ({ src, alt, ...rest }) => {
-    return (
-      <img className="portraitContainer" alt={alt} src={src} {...rest} s />
-    );
+    return <img className="portraitContainer" alt={alt} src={src} {...rest} />;
   };
 
   return { CButton, ImageContainer };

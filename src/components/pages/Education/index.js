@@ -11,9 +11,9 @@ function Education() {
   const regexNbsp = /&nbsp;/g;
 
   return (
-    <div style={{ height: "100vh", backgroundColor: "whitesmoke" }}>
+    <div style={{ minHeight: "100vh", backgroundColor: "whitesmoke" }}>
       <Fade bottom cascade>
-        <Content style={{ padding: "10% 15%" }}>
+        <Content style={{ padding: "7% 15%" }}>
           <Title level={1}>Education</Title>
 
           <Timeline mode="alternate">

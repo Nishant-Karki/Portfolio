@@ -7,6 +7,7 @@ import useWindowsScrollPosition from "@rehooks/window-scroll-position";
 function Navbar() {
   const [change, setChange] = useState(false);
   const changePosition = 755;
+  const secondPosition = 1515;
 
   let position = useWindowsScrollPosition();
 
@@ -20,6 +21,7 @@ function Navbar() {
   const headerStyle = {
     // backgroundColor: change ? "whitesmoke" : "#1F1E1D",
     backgroundColor: "transparent",
+    zIndex: 999,
     position: "fixed",
     width: "100%",
     transition: "0.5s ease-in-out",
@@ -42,7 +44,7 @@ function Navbar() {
         {/* <Menu.Item key="skill">Skills .</Menu.Item>
         <Menu.Item key="contact">Contact .</Menu.Item> */}
         <Menu.Item key="contact" style={{ fontSize: "16px" }}>
-          Lets Talk .
+          Let's Talk .
         </Menu.Item>
       </Menu>
     </Header>
