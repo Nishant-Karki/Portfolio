@@ -73,15 +73,19 @@ function Home() {
               </a>
             </Fade>
           </Col>
-          <Col offset={4} md={6} sm={12} xs={24}>
-            <Fade right duration={600}>
-              <ImageContainer
-                alt="portrait"
-                height={300}
-                width={300}
-                src="https://images.unsplash.com/photo-1422728280635-45167d8b7197?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              />
-            </Fade>
+          <Col offset={2} md={10} sm={12} xs={24}>
+            <div
+              style={{ display: "flex", alignItems: "center", height: "100%" }}
+            >
+              <Fade right duration={600}>
+                <ImageContainer
+                  alt="portrait"
+                  height={"auto"}
+                  width={300}
+                  src="https://images.unsplash.com/photo-1422728280635-45167d8b7197?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                />
+              </Fade>
+            </div>
           </Col>
         </Row>
       </div>

@@ -8,7 +8,7 @@ function useComponents() {
 
   const CButton = ({ children, color }) => {
     return (
-      <div className="btnbg">
+      <div className="btnbg" type="button">
         <div style={{ color: color }}>{children}</div>
       </div>
     );
