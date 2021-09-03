@@ -3,11 +3,11 @@ import { Menu } from "antd";
 import Layout, { Footer, Header, Content } from "antd/lib/layout/layout";
 import "../sass/nav.scss";
 import useWindowsScrollPosition from "@rehooks/window-scroll-position";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [change, setChange] = useState(false);
   const changePosition = 755;
-  const secondPosition = 1515;
 
   let position = useWindowsScrollPosition();
 
@@ -18,22 +18,14 @@ function Navbar() {
     setChange(false);
   }
 
-  const letsTalk = () => {
-    window.scrollTo({
-      bottom: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
   const headerStyle = {
-    // backgroundColor: change ? "whitesmoke" : "#1F1E1D",
-    backgroundColor: "transparent",
+    backgroundColor: change ? "whitesmoke" : "#1F1E1D",
+    // backgroundColor: "transparent",
     zIndex: 999,
     position: "fixed",
     width: "100%",
     transition: "0.5s ease-in-out",
-    maxWidth: "85rem",
+    padding: "0 5%",
   };
 
   const appStyle = {
@@ -51,12 +43,15 @@ function Navbar() {
       <Menu mode="horizontal" style={appStyle}>
         {/* <Menu.Item key="skill">Skills .</Menu.Item>
         <Menu.Item key="contact">Contact .</Menu.Item> */}
-        <Menu.Item
-          key="contact"
-          style={{ fontSize: "16px" }}
-          onClick={() => letsTalk()}
-        >
-          Let's Talk .
+        <Menu.Item key="contact" style={{ fontSize: "18px" }}>
+          <HashLink
+            to="#_"
+            smooth
+            className="nav-active"
+            style={{ color: !change ? "whitesmoke" : "black" }}
+          >
+            Let's Talk .
+          </HashLink>
         </Menu.Item>
       </Menu>
     </Header>

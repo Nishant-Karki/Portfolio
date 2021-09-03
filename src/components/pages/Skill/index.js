@@ -9,26 +9,38 @@ function Skill() {
   return (
     <div
       style={{
-        minHeight: "80vh",
+        height: "100%",
         backgroundColor: "#e9e9e9",
       }}
     >
       <Content style={{ padding: "10% 15%" }}>
-        <Title level={1}>Skills</Title>
+        <Title level={1} style={{ marginBottom: "2rem" }}>
+          Skills
+        </Title>
         <div>
           <Row>
             {
               user.skills.map((item, index) => (
-                <Col key={index} lg={6} md={12} sm={12} xs={24}>
+                <Col
+                  key={index}
+                  lg={6}
+                  md={12}
+                  sm={12}
+                  xs={24}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   <Fade bottom cascade>
                     <div
                       style={{
                         cursor: "pointer",
-                        minHeight: "6rem",
+                        height: "6.5rem",
                         backgroundColor: "#272624",
-                        maxWidth: "14rem",
+                        width: "14rem",
                         borderRadius: "1rem",
-                        padding: "1rem",
+                        padding: "1.5rem",
                         margin: "1rem",
                         textAlign: "center",
                         boxShadow: "6px 8px 5px #A6A6A6",

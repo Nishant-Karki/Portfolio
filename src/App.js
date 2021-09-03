@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Switch } from "react-router";
 
 import Navbar from "./components/common/Navbar";
 import Home from "./components/pages/Home/index";
@@ -14,6 +15,7 @@ function App() {
   useEffect(() => {
     document.title = `${user.firstName}'s Portfolio`;
   }, []);
+
   return (
     <>
       <Navbar />
