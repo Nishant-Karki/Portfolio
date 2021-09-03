@@ -11,3 +11,10 @@
 .ant-menu-item-selected {
   color: #f84525 !important;
 }
+
+.nav-active {
+  &:active,
+  &:hover {
+    color: #f84525 !important;
+  }
+}

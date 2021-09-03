@@ -35,9 +35,9 @@ function Footer() {
 
   return (
     <div
-      id="contact"
+      id="_"
       style={{
-        minHeight: "90vh",
+        height: "100%",
         backgroundColor: "#171615",
         color: "whitesmoke",
       }}
