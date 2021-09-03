@@ -8,6 +8,7 @@
   margin-bottom: 1rem;
   text-decoration: underline;
   font-size: 16px;
+  width: auto;
 
   &:hover {
     color: #f84525;
@@ -22,5 +23,23 @@
 
   &:hover {
     color: whitesmoke;
+  }
+}
+
+[title="Name"],
+[title="Email"],
+[title="Message"] {
+  color: whitesmoke !important;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #f5f5f5 !important;
+  border-radius: 0.5rem !important;
+
+  &:hover,
+  &:focus {
+    border-color: #f84525 !important;
   }
 }

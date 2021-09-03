@@ -19,7 +19,7 @@ function Skill() {
           <Row>
             {
               user.skills.map((item, index) => (
-                <Col key={index} lg={6} md={4} sm={12} xs={24}>
+                <Col key={index} lg={6} md={12} sm={12} xs={24}>
                   <Fade bottom cascade>
                     <div
                       style={{

@@ -18,6 +18,14 @@ function Navbar() {
     setChange(false);
   }
 
+  const letsTalk = () => {
+    window.scrollTo({
+      bottom: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const headerStyle = {
     // backgroundColor: change ? "whitesmoke" : "#1F1E1D",
     backgroundColor: "transparent",
@@ -43,7 +51,11 @@ function Navbar() {
       <Menu mode="horizontal" style={appStyle}>
         {/* <Menu.Item key="skill">Skills .</Menu.Item>
         <Menu.Item key="contact">Contact .</Menu.Item> */}
-        <Menu.Item key="contact" style={{ fontSize: "16px" }}>
+        <Menu.Item
+          key="contact"
+          style={{ fontSize: "16px" }}
+          onClick={() => letsTalk()}
+        >
           Let's Talk .
         </Menu.Item>
       </Menu>
